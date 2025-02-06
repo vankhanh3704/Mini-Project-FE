@@ -1,0 +1,57 @@
+/* viết những thứ dùng cho nhiều nơi */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root{
+    /* màu chủ đạo */
+    --color-one: #ff8583;
+    /* màu phụ */
+    --color-two: #f7d9c4;
+    --color-text: #232323;
+    --color-bg1: #efefef;
+    --color-bg2: #dce8eb;
+    --font : "DM Sans", serif;
+}
+
+body{
+    /* css cho tất cả các thẻ dùng font */
+    font-family: var(--font);
+    color: var(--color-text);
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    /* margin left right : auto để tự động căn ra giữa */
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 1200px){
+    .container {
+        max-width: 960px;
+    }
+}
+@media (max-width: 992px){
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px){
+    .container {
+        max-width: 540px;
+    }
+}
+@media (max-width: 576px){
+    .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
